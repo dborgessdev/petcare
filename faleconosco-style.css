@@ -126,7 +126,7 @@ footer a{
     align-items: center;
     border-radius: 5px;
     background-color: #25f474c1;
-    width: 100px;
+    width: 39%;
     height: 35px;
     margin: 5px;
 }
@@ -201,6 +201,14 @@ footer a{
     text-align: center;
     align-items: center;
     justify-content: center;
+}
+
+#faleconoscotext{
+    width: 80%;
+    height: 500px;
+    margin: 15px;
+    text-align: justify;
+    align-items: center;
 }
 
 #loginsingupsec{
