@@ -15,7 +15,6 @@ body{
 }
 
 header{
-    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     align-items: center;
@@ -38,6 +37,7 @@ h3{
 
 main{
     padding-bottom: 45px;
+    margin: 10px;
 }
 
 
@@ -238,4 +238,17 @@ footer a{
     display: grid;
     grid-template-columns: repeat(2, 75%);
 
+}
+
+#cart-sidebar{
+    width: 60%;
+    color: #25f474c1;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #7144DB;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    justify-content: space-between;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
+    padding: 10px;
 }

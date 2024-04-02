@@ -45,41 +45,35 @@
         </span>
     </header>
     <main>
-        <h1 class="h1titulo">
-            <span class="h1titulo">Pet</span>
-                <img id="imglogomain" src="./imagens/icons8-cópia-da-pata-do-cão-48.png">
-            <span class="h1titulo">Care</span>
-        </h1>
-        <h2>
-            Carinho e economia para todos os bichinhos, grandes e pequenos, com penas, escamas e patinhas!
-        </h2>
-        <h3>
-            Conheça nossos serviços e produtos.
-        </h3>
+        <!-- Conteúdo principal -->
         <section id="sectionhig">
-            <ul>
-                <li class="lisects">
-                    <h3 class="titulosec">Higiene</h3>
-                </li>
-            </ul>
             <ul id="ulshopitens">
+                <!-- Itens da loja -->
                 <li class="lishopitens">
-                    <span> <img class="imgitens" src="./imagens/prod_hig1.jpg" alt=""></span><span><p>Nome - Banho  & tosa</p></span><span><p>Marca - A melhor</p></span>
-                    <span><p>Valor - R$15</p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" id="btn1"> 
+                    <span> <img class="imgitens" src="./imagens/prod_hig1.jpg" alt=""></span><span><p id="nome-prod-hig-1">Banho  & Tosa</p></span><span><p>Marca - A melhor</p></span>
+                    <span><p id="valor-prod-hig-1">Valor - R$15</p></span>
+                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Banho & Tosa', 15)">
                 </li>
                 <li class="lishopitens">
-                    <span> <img class="imgitens" src="./imagens/prod_hig2.jpg" alt=""></span><span><p>Nome - Shampoo</p></span> <span><p>Marca - A melhor</p></span>
-                    <span><p>Valor - R$20</p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" id="btn2">
+                    <span> <img class="imgitens" src="./imagens/prod_hig2.jpg" alt=""></span><span><p id="nome-prod-hig-2">Shampoo</p></span> <span><p>Marca - A melhor</p></span>
+                    <span><p id="valor-prod-hig-2">Valor - R$20</p></span>
+                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Shampoo', 20)">
                 </li>
                 <li class="lishopitens">
-                    <span> <img class="imgitens" src="./imagens/prod_hig3.png" alt=""> </span><span><p>Nome - Enxaguante bucal</p></span> <span><p>Marca - A melhor</p></span>
-                    <span><p>Valor - R$30 </p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" id="btn3">
+                    <span> <img class="imgitens" src="./imagens/prod_hig3.png" alt=""> </span><span><p id="nome-prod-hig-3">Enxaguante bucal</p></span> <span><p>Marca - A melhor</p></span>
+                    <span><p id="valor-prod-hig-3">Valor - R$30</p></span>
+                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Enxaguante bucal', 30)">
                 </li>
             </ul>
         </section>
+        <aside id="cart-sidebar">
+            <!-- Carrinho de compras -->
+            <h3>Carrinho de Compras</h3>
+            <ul id="cart-display"></ul>
+            <p>Total: <span id="cart-total">R$0</span></p>
+            <button id="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
+            
+        </aside>
     </main>
     <footer>
         <div class="divfooter">
@@ -108,5 +102,6 @@
             <p>Todos os direitos reservados © 2024 ™</p>
         </div>
     </footer>
+    <script src="higieneshop-script.js"></script>
 </body>
 </html>
