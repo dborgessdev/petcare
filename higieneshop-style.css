@@ -8,8 +8,8 @@
 body{
     background-color: #ffe9bdc3;
     margin: auto;
-    font-family: "Calistoga", serif;
-    font-weight: lighter;
+    font-family: "Open Sans", serif;
+    font-weight:500;
     font-style: normal;
     text-shadow: 1.5px 1.5px black;
 }
@@ -56,7 +56,7 @@ a:hover{
 footer{
     background-color: #7144DB;
     margin: auto;
-    width: 93%;
+    width: 91%;
     padding: 10px;
     border-radius: 10px 10px 0px 0px;
     border: 2px solid #352065;
@@ -66,6 +66,21 @@ footer a{
     text-decoration: none;
 }
 
+cart-sidebar ul li{
+    margin: 10px;
+    padding: 10px;
+}
+
+aside ul li{
+    list-style: none;
+}
+
+aside ul li button{
+    padding: 5px;
+    background-color: #25f474c1;
+    color: #352065;
+    border-radius: 5px;
+}
 /*Classes*/
 
 .anavspanheader{
@@ -127,21 +142,25 @@ footer a{
 }
 
 .btnaddbag{
-    padding: 5px;
+    padding: 3px;
     background-color: #25f474c1;
     color: #352065;
-    border-radius: 5px;
-    width: 50%;
+    border-radius: 3px;
+    width: 80%;
 }
 
 .span-li-shopitens{
     width: 80%;
 }
 
+.cart-item-price{
+    font-size: 12px;
+}
+
 /*IDS*/
 
 #ulnavspanheader1{
-    width: 95%;
+    width: 93%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -156,7 +175,7 @@ footer a{
 }
 
 #ulnavspanheader2{
-    width: 95%;
+    width: 93%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -198,6 +217,7 @@ footer a{
     width: 60%;
     color: #25f474c1;
     border-radius: 10px 10px 10px 10px;
+    border: 3px solid #25f474c1;
     background-color: #352065;
     align-items: center;
     text-align: center;
@@ -241,10 +261,12 @@ footer a{
 }
 
 #cart-sidebar{
+    height: 70%px;
     width: 60%;
     color: #25f474c1;
     border-radius: 10px 10px 10px 10px;
     background-color: #7144DB;
+    border: 3px solid #25f474c1;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -252,3 +274,21 @@ footer a{
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     padding: 10px;
 }
+
+#checkout-btn{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #25f474c1;
+    color: #352065;
+    border-radius: 5px;
+    width: 40%;
+
+}
+
+#titulo-shop-car{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+

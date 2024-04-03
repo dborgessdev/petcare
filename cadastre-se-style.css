@@ -8,8 +8,8 @@
 body{
     background-color: #ffe9bdc3;
     margin: auto;
-    font-family: "Calistoga", serif;
-    font-weight: lighter;
+    font-family: "Open Sans", serif;
+    font-weight:500;
     font-style: normal;
     text-shadow: 1.5px 1.5px black;
 }
@@ -144,7 +144,7 @@ footer a{
 /*IDS*/
 
 #ulnavspanheader1{
-    width: 95%;
+    width: 93%;
     display: flex;
     align-items: center;
     text-align: center;
@@ -159,7 +159,7 @@ footer a{
 }
 
 #ulnavspanheader2{
-    width: 95%;
+    width: 93%;
     display: flex;
     align-items: center;
     text-align: center;

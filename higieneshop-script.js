@@ -1,76 +1,80 @@
-var cart = {}; // Carrinho de compras
+// Função para adicionar um item ao carrinho de compras
+    function adicionarItem(id, nome, valor) {
+        // Verificar se o item já está no carrinho
+        var itemExistente = document.getElementById("cart-item-" + id);
+        if (itemExistente) {
+            // Se o item já existe, apenas aumente a quantidade
+            var quantidadeElement = itemExistente.querySelector(".cart-item-quantity");
+            var quantidade = parseInt(quantidadeElement.textContent);
+            quantidadeElement.textContent = quantidade + 1;
 
-// Função para adicionar item ao carrinho
-function adicionarItem(nome, valor) {
-    if (cart[nome]) {
-        cart[nome].quantidade++;
-    } else {
-        cart[nome] = { quantidade: 1, valor: valor };
-    }
-    atualizarCarrinho();
-}
+            // Atualizar o total do carrinho
+            atualizarTotal();
+        } else {
+            // Se o item não existe, crie um novo item no carrinho
+            var cartDisplay = document.getElementById("cart-display");
+            var novoItem = document.createElement("li");
+            novoItem.setAttribute("id", "cart-item-" + id);
 
-// Função para adicionar uma unidade de um item no carrinho
-function adicionarUnidade(nome) {
-    if (cart[nome]) {
-        cart[nome].quantidade++;
-        atualizarCarrinho();
-    }
-}
+            var itemHTML = `
+                <span>${nome}</span>
+                <span class="cart-item-price">R$${valor}</span>
+                <span class="cart-item-quantity">1 und</span>
+                <button class="btn-plus" onclick="aumentarQuantidade(${id},${valor})">+</button>
+                <button class="btn-minus" onclick="diminuirQuantidade(${id},${valor})">-</button>
+                <button class="btn-remove" onclick="removerItem(${id},${valor})">Remover</button>
+            `;
+            novoItem.innerHTML = itemHTML;
+            cartDisplay.appendChild(novoItem);
 
-// Função para remover uma unidade de um item no carrinho
-function removerUnidade(nome) {
-    if (cart[nome] && cart[nome].quantidade > 1) {
-        cart[nome].quantidade--;
-        atualizarCarrinho();
-    }
-}
-
-// Função para remover um item do carrinho
-function removerItem(nome) {
-    if (cart[nome]) {
-        delete cart[nome];
-        atualizarCarrinho();
-    }
-}
-
-// Função para atualizar o carrinho na interface
-function atualizarCarrinho() {
-    var cartDisplay = document.getElementById("cart-display");
-    var total = 0;
-    cartDisplay.innerHTML = ""; // Limpar o conteúdo atual do carrinho
-
-    // Percorrer cada item no carrinho
-    for (var item in cart) {
-        var li = document.createElement("li");
-        li.textContent = item + " - R$" + (cart[item].valor * cart[item].quantidade) + " (" + cart[item].quantidade + " unidades)";
-        cartDisplay.appendChild(li);
-        total += cart[item].valor * cart[item].quantidade;
-
-        // Adiciona botões de adicionar e remover unidades
-        var btnAddUnit = document.createElement("button");
-        btnAddUnit.textContent = "+";
-        btnAddUnit.onclick = function() { adicionarUnidade(item); };
-        li.appendChild(btnAddUnit);
-
-        var btnRemoveUnit = document.createElement("button");
-        btnRemoveUnit.textContent = "-";
-        btnRemoveUnit.onclick = function() { removerUnidade(item); };
-        li.appendChild(btnRemoveUnit);
-
-        var btnRemoveItem = document.createElement("button");
-        btnRemoveItem.textContent = "Remover";
-        btnRemoveItem.onclick = function() { removerItem(item); };
-        li.appendChild(btnRemoveItem);
+            // Atualizar o total do carrinho
+            atualizarTotal();
+        }
     }
 
-    // Atualizar o total
-    document.getElementById("cart-total").textContent = "R$" + total.toFixed(2);
-}
+    // Função para aumentar a quantidade de um item no carrinho
+    function aumentarQuantidade(id, valor) {
+        var quantidadeElement = document.getElementById("cart-item-" + id).querySelector(".cart-item-quantity");
+        var quantidade = parseInt(quantidadeElement.textContent.split(" ")[0]);
+        quantidadeElement.textContent = quantidade + 1 + " unds";
 
-// Função para finalizar a compra (limpa o carrinho)
-function finalizarCompra() {
-    cart = {}; // Limpar carrinho
-    atualizarCarrinho();
-    alert("Compra finalizada!");
-}
+        // Atualizar o total do carrinho
+        atualizarTotal();
+    }
+
+    // Função para diminuir a quantidade de um item no carrinho
+    function diminuirQuantidade(id, valor) {
+        var quantidadeElement = document.getElementById("cart-item-" + id).querySelector(".cart-item-quantity");
+        var quantidade = parseInt(quantidadeElement.textContent.split(" ")[0]);
+        if (quantidade > 1) {
+            quantidadeElement.textContent = quantidade - 1 + " unds";
+
+            // Atualizar o total do carrinho
+            atualizarTotal();
+        }
+    }
+
+    // Função para remover um item do carrinho
+    function removerItem(id, valor) {
+        var itemRemover = document.getElementById("cart-item-" + id);
+        itemRemover.parentNode.removeChild(itemRemover);
+
+        // Atualizar o total do carrinho
+        atualizarTotal();
+    }
+
+    // Função para atualizar o total do carrinho
+    function atualizarTotal() {
+        var subtotalItens = document.querySelectorAll(".cart-item-price");
+        var total = 0;
+        subtotalItens.forEach(function (element) {
+            total += parseFloat(element.textContent.replace("R$", "")) * parseInt(element.nextElementSibling.textContent.split(" ")[0]);
+        });
+
+        document.getElementById("cart-total").textContent = "R$" + total.toFixed(2);
+    }
+
+    // Função para finalizar a compra
+    function finalizarCompra() {
+        alert("Compra finalizada!");
+    }

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./higieneshop-style.css">
+    <link rel="shortcut icon" href="./imagens/icons8-cópia-da-pata-do-cão-48.png" type="image/x-icon">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Calistoga&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="./imagens/icons8-cópia-da-pata-do-cão-48.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 
     <title>Pet♥Care</title>
 </head>
@@ -52,27 +53,26 @@
                 <li class="lishopitens">
                     <span> <img class="imgitens" src="./imagens/prod_hig1.jpg" alt=""></span><span><p id="nome-prod-hig-1">Banho  & Tosa</p></span><span><p>Marca - A melhor</p></span>
                     <span><p id="valor-prod-hig-1">Valor - R$15</p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Banho & Tosa', 15)">
+                    <input class="btnaddbag" type="button" value="Adicionar" onclick="adicionarItem(1, 'Banho & Tosa', 15)">
                 </li>
                 <li class="lishopitens">
                     <span> <img class="imgitens" src="./imagens/prod_hig2.jpg" alt=""></span><span><p id="nome-prod-hig-2">Shampoo</p></span> <span><p>Marca - A melhor</p></span>
                     <span><p id="valor-prod-hig-2">Valor - R$20</p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Shampoo', 20)">
+                    <input class="btnaddbag" type="button" value="Adicionar" onclick="adicionarItem(2, 'Shampoo', 20)">
                 </li>
                 <li class="lishopitens">
                     <span> <img class="imgitens" src="./imagens/prod_hig3.png" alt=""> </span><span><p id="nome-prod-hig-3">Enxaguante bucal</p></span> <span><p>Marca - A melhor</p></span>
                     <span><p id="valor-prod-hig-3">Valor - R$30</p></span>
-                    <input class="btnaddbag" type="button" value="Adicionar à sacola" onclick="adicionarItem('Enxaguante bucal', 30)">
+                    <input class="btnaddbag" type="button" value="Adicionar" onclick="adicionarItem(3, 'Enxaguante bucal', 30)">
                 </li>
             </ul>
         </section>
         <aside id="cart-sidebar">
             <!-- Carrinho de compras -->
-            <h3>Carrinho de Compras</h3>
+            <h3 id="titulo-shop-car">Carrinho de Compras</h3>
             <ul id="cart-display"></ul>
             <p>Total: <span id="cart-total">R$0</span></p>
             <button id="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
-            
         </aside>
     </main>
     <footer>
