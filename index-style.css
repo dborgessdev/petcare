@@ -6,12 +6,11 @@
 /*Seletores*/
 
 body{
-    background-color: #DFF8FF;
+    background-color: #fffedf;
     margin: auto;
     font-family: "Open Sans", serif;
     font-weight:500;
     font-style: normal;
-    text-shadow: 1.5px 1.5px black;
 }
 
 header{
@@ -26,14 +25,14 @@ header{
 
 h2{
     font-size: 25px;
-    color: #24D6D3;
+    color: #D658B1;
     text-align: center;
     padding-bottom: 65px;
 }
 
 h3{
-    font-size: 20px;
-    color: #24D6D3;
+    font-size: 25px;
+    color: #D658B1;
     text-align: center;
 }
 
@@ -51,18 +50,17 @@ a:visited{
 }
 
 a:hover{
-    color:#D658B1;
+    color:#ffbceb;
 }
 
 footer{
     background-color: #1A9C9A;
     margin: auto;
-    width: 90%;
+    width: 80%;
     margin-bottom: 15px;
     padding-bottom: 20px;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
-    border: 2px solid #d492c0;
     height: 180px;
     margin-bottom: 15px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
@@ -73,6 +71,12 @@ footer a{
 }
 
 /*Classes*/
+.divs-sec-main{
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 22%;
+}
 
 .anavspanheader{
     text-decoration: none;
@@ -83,6 +87,7 @@ footer a{
     font-size: 80px;
     color: #24D6D3;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .h1titulo:hover{
@@ -90,6 +95,7 @@ footer a{
     font-size: 75px;
     color: #D658B1;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .lisects{
@@ -100,7 +106,9 @@ footer a{
 }
 
 .titulosec{
-    font-size: 30px;
+    font-size: 16px;
+    margin: auto;
+    color: #ffffff;
 }
 
 .divfooter{
@@ -109,7 +117,7 @@ footer a{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    color: #D658B1;
+    color: #ffff;
 }
 
 .spanfooter{
@@ -193,15 +201,17 @@ footer a{
     justify-content: space-between;
 }
 
-#sectionhig{
-    width: 60%;
+#sectioncentral{
+    display: flex;
+    width: 80%;
     color: #D658B1  ;
-    border-radius: 10px 10px 0px 0px;
+    border-radius: 10px 10px 10px 10px;
     background-color: #00C7C5;
     align-items: center;
     text-align: center;
+    margin-top: 15px;
     margin: auto;
-    justify-content: space-between;
+    justify-content: space-around;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     padding: 10px;
 }
@@ -214,14 +224,14 @@ footer a{
 }
 
 #imgsechig:hover{
-    width: 50%;
+    width: 60%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     border-radius: 10px;
 }
 
 #sectionsau{
     width: 60%;
-    color: #24D6D3;
+    color: #D658B1;
     background-color: #00C7C5;
     align-items: center;
     text-align: center;
@@ -238,14 +248,14 @@ footer a{
 }
 
 #imgsecsau:hover{
-    width: 50%;
+    width: 60%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     border-radius: 10px;
 }
 
 #sectionalim{
     width: 60%;
-    color: #24D6D3;
+    color: #D658B1;
     background-color: #00C7C5;
     align-items: center;
     text-align: center;
@@ -262,14 +272,14 @@ footer a{
 }
 
 #imgsecalim:hover{
-    width: 50%;
+    width: 60%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     border-radius: 10px;
 }
 
 #sectionades{
     width: 60%;
-    color: #24D6D3;
+    color: #D658B1;
     border-radius: 0px 0px 10px 10px;
     background-color: #00C7C5;
     align-items: center;
@@ -281,15 +291,16 @@ footer a{
 }
 
 #imgsecades{
-    width: 45%;
+    width: 50%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     border-radius: 10px;
 }
 
 #imgsecades:hover{
-    width: 50%;
+    width: 65%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
     border-radius: 10px;
+
 }
 
 #sectionfooter{

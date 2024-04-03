@@ -6,7 +6,7 @@
 /*Seletores*/
 
 body{
-    background-color: #ffe9bdc3;
+    background-color: #fffedf;
     margin: auto;
     font-family: "Open Sans", serif;
     font-weight:500;
@@ -181,7 +181,7 @@ footer a{
 #btsrchul{
     padding-left: 10px;
     border-radius: 5px;
-    width: 300px;
+    width: 75%;
     height: 30px;
     text-align: center; 
 }
