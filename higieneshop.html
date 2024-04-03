@@ -39,7 +39,7 @@
             <nav>
                 <ul id="ulnavspanheader2">
                     <li><a class="anavspanheader" href="./index.html">Home</a></li>
-                    <li><a class="anavspanheader" href=""><p>Sacolinha de compras</p><img src="./imagens/icons8-viciado-em-compras-50.png"></a></li>
+                    <li><a class="anavspanheader" href=""><p>Sacolinha de compras</p><img id="img-sacola" src="./imagens/icons8-viciado-em-compras-50.png"></a></li>
                     <li><a class="anavspanheader" href="./login-singup.html">Login / Singup</a></li>
                 </ul>
             </nav>
@@ -72,6 +72,9 @@
             <h3 id="titulo-shop-car">Carrinho de Compras</h3>
             <ul id="cart-display"></ul>
             <p>Total: <span id="cart-total">R$0</span></p>
+            <input placeholder="Informe o cep para entrega" type="text" id="cepInput">
+            <button id="btbusc" onclick="buscarEndereco()">Buscar</button>
+            <div id="endereco"></div>
             <button id="checkout-btn" onclick="finalizarCompra()">Finalizar Compra</button>
         </aside>
     </main>

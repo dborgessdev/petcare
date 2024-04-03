@@ -20,6 +20,8 @@ header{
     text-align: center;
     align-items: center;
     justify-content: space-between;
+    margin: auto;
+    width: 90%;
 }
 
 h2{
@@ -67,7 +69,9 @@ a:hover{
 footer{
     background-color: #7144DB;
     margin: auto;
-    width: 95%;
+    width: 90%;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
     border: 2px solid #7144DB;
@@ -139,6 +143,7 @@ footer a{
     margin: 10px;
     padding: 10px;
     box-shadow: 2px 2px black;
+    text-align: center;
 }
 
 
@@ -228,4 +233,8 @@ footer a{
     flex-direction: column;
     margin-bottom: 50px;
     box-shadow: 1px 1px black;
+}
+
+#img-sacola{
+    width: 20%;
 }

@@ -15,11 +15,13 @@ body{
 }
 
 header{
+    padding-top: 30px;
     padding-bottom: 30px;
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    width: 99%;
+    margin: auto;
+    width: 90%;
 }
 
 h2{
@@ -56,7 +58,9 @@ a:hover{
 footer{
     background-color: #7144DB;
     margin: auto;
-    width: 95%;
+    width: 90%;
+    margin-bottom: 15px;
+    padding-bottom: 20px;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
     border: 2px solid #7144DB;
@@ -140,7 +144,7 @@ aside ul li button{
 }
 
 .imgitens{
-    width: 40%;
+    width: 50%;
     border-radius: 10px;
 }
 
@@ -158,6 +162,10 @@ aside ul li button{
 
 .cart-item-price{
     font-size: 12px;
+}
+
+.btn-remove{
+    color: #352065;
 }
 
 /*IDS*/
@@ -295,3 +303,36 @@ aside ul li button{
     margin-bottom: 5px;
 }
 
+#img-sacola{
+    width: 20%;
+}
+
+#cepInput{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #ffe9bdc3;
+    color: #352065;
+    border-radius: 5px;
+    width: 20%;
+}
+
+#btbusc{
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+    padding: 5px;
+    background-color: #25f474c1;
+    color: #352065;
+    border-radius: 5px;
+    width: 20%;
+}
+
+#btn-plus{
+    color: #352065;
+}
+
+#btn-plus{
+    color: #352065;
+}
