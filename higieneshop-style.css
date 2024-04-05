@@ -11,7 +11,6 @@ body{
     font-family: "Open Sans", serif;
     font-weight:500;
     font-style: normal;
-    text-shadow: 1.5px 1.5px black;
 }
 
 header{
@@ -26,14 +25,14 @@ header{
 
 h2{
     font-size: 30px;
-    color: #7C5DF5;
+    color: #D658B1;
     text-align: center;
     padding-bottom: 65px;
 }
 
 h3{
     font-size: 30px;
-    color: #25f474c1;
+    color: white;
     text-align: center;
 }
 
@@ -52,20 +51,18 @@ a:visited{
 }
 
 a:hover{
-    color:#25f474c1;
+    color:#ffbceb;
 }
 
 footer{
-    background-color: #7144DB;
+    background-color: #1A9C9A;
+    color: white;
     margin: auto;
-    width: 90%;
-    margin-bottom: 15px;
-    padding-bottom: 20px;
+    width: 100%;
     padding: 5px;
     border-radius: 10px 10px 10px 10px;
-    border: 2px solid #7144DB;
-    height: 180px;
-    margin-bottom: 15px;
+    max-height: 75%;
+    padding-bottom: 20px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -84,8 +81,8 @@ aside ul li{
 
 aside ul li button{
     padding: 5px;
-    background-color: #25f474c1;
-    color: #7C5DF5;
+    background-color: #ffbceb;
+    color: white;
     border-radius: 5px;
 }
 /*Classes*/
@@ -97,15 +94,17 @@ aside ul li button{
 .h1titulo{
     padding-top: 40px;
     font-size: 80px;
-    color: #25f474c1;
+    color: #24D6D3;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .h1titulo:hover{
     padding-top: 40px;
-    font-size: 85px;
-    color: #7C5DF5;
+    font-size: 75px;
+    color: #D658B1;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .lisects{
@@ -125,7 +124,7 @@ aside ul li button{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    color: #25f474c1;
+    color: white;
 }
 
 .spanfooter{
@@ -149,11 +148,12 @@ aside ul li button{
 }
 
 .btnaddbag{
+    font-size: 13px;
     padding: 3px;
-    background-color: #25f474c1;
-    color: #352065;
+    background-color: #ffbceb;
+    color: black;
     border-radius: 3px;
-    width: 80%;
+    max-width: 80%;
 }
 
 .span-li-shopitens{
@@ -165,7 +165,7 @@ aside ul li button{
 }
 
 .btn-remove{
-    color: #352065;
+    color: black;
 }
 
 /*IDS*/
@@ -181,7 +181,7 @@ aside ul li button{
     margin: auto;
     list-style: none;
     border-radius: 10px 10px 0px 0px;
-    background-color: #7C5DF5;
+    background-color: #1A9C9A;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -196,7 +196,7 @@ aside ul li button{
     margin: auto;
     list-style: none;
     border-radius: 0px 0px 10px 10px;
-    background-color: #7C5DF5;
+    background-color: #1A9C9A;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -226,10 +226,9 @@ aside ul li button{
 
 #sectionhig{
     width: 60%;
-    color: #25f474c1;
-    border-radius: 10px 10px 10px 10px;
-    border: 3px solid #25f474c1;
-    background-color: #7C5DF5;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    background-color: #1A9C9A;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -274,10 +273,9 @@ aside ul li button{
 #cart-sidebar{
     height: 70%px;
     width: 60%;
-    color: #25f474c1;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #7C5DF5;
-    border: 3px solid #25f474c1;
+    color: white;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #1A9C9A;
     align-items: center;
     text-align: center;
     margin: auto;
@@ -291,10 +289,10 @@ aside ul li button{
     text-align: center;
     margin-top: 20px;
     padding: 5px;
-    background-color: #25f474c1;
-    color: #352065;
+    background-color: #ffbceb;
+    color: black;
     border-radius: 5px;
-    width: 40%;
+    max-width: 40%;
 
 }
 
@@ -313,7 +311,7 @@ aside ul li button{
     margin-top: 20px;
     padding: 5px;
     background-color: #ffe9bdc3;
-    color: #352065;
+    color: black;
     border-radius: 5px;
     width: 20%;
 }
@@ -323,16 +321,16 @@ aside ul li button{
     text-align: center;
     margin-top: 20px;
     padding: 5px;
-    background-color: #25f474c1;
-    color: #352065;
+    background-color: #ffbceb;
+    color: black;
     border-radius: 5px;
-    width: 20%;
+    max-width: 25%;
 }
 
 #btn-plus{
-    color: #352065;
+    color: black;
 }
 
 #btn-plus{
-    color: #352065;
+    color: black;
 }

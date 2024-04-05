@@ -43,7 +43,6 @@ h3{
 
 h4{
     font-size: 20px;
-    color: #25f474c1;
     text-align: center;
     align-items: center;
     justify-content: space-between;
@@ -63,20 +62,17 @@ a:visited{
 }
 
 a:hover{
-    color:#25f474c1;
+    color:#ffbceb;
 }
 
 footer{
-    background-color: #7144DB;
+    background-color: #1A9C9A;  
+    color: white;
     margin: auto;
-    width: 90%;
-    margin-bottom: 15px;
-    padding-bottom: 20px;
+    width: 100%;
     padding: 5px;
-    border-radius: 10px 10px 10px 10px;
-    border: 2px solid #7144DB;
-    height: 180px;
-    margin-bottom: 15px;
+    max-height: 75%;
+    padding-bottom: 20px;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -93,15 +89,17 @@ footer a{
 .h1titulo{
     padding-top: 40px;
     font-size: 80px;
-    color: #25f474c1;
+    color: #24D6D3;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .h1titulo:hover{
     padding-top: 40px;
     font-size: 75px;
-    color: #7C5DF5;
+    color: #D658B1;
     text-align: center;
+    text-shadow: 1px 1px black;
 }
 
 .titulosec{
@@ -114,7 +112,7 @@ footer a{
     text-align: center;
     align-items: center;
     justify-content: space-between;
-    color: #25f474c1;
+    color: white;
 }
 
 .spanfooter{
@@ -130,16 +128,17 @@ footer a{
     text-align: center;
     align-items: center;
     border-radius: 5px;
-    background-color: #25f474c1;
-    width: 39%;
+    background-color: #ffbceb;
+    max-width: 40%;
     height: 35px;
     margin: 5px;
 }
 .btenter_cad:hover{
-    background-color: #2db15fe3;
+    background-color: #1A9C9A;
 }
 
-.textuser-pass{
+.textuser-email{
+    max-width: 60%;
     margin: 10px;
     padding: 10px;
     box-shadow: 2px 2px black;
@@ -160,7 +159,7 @@ footer a{
     margin: auto;
     list-style: none;
     border-radius: 10px 10px 0px 0px;
-    background-color: #7C5DF5;
+    background-color: #1A9C9A;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -175,7 +174,7 @@ footer a{
     margin: auto;
     list-style: none;
     border-radius: 0px 0px 10px 10px;
-    background-color: #7C5DF5;
+    background-color: #1A9C9A;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
 }
 
@@ -217,15 +216,15 @@ footer a{
     align-items: center;
 }
 
-#loginsingupsec{
+#faleconosc-card{
     color: white;
-    background-color: #7C5DF5;
-    width: 80%;
+    background-color: #1A9C9A;
+    max-width: 60%;
     border-radius: 10px;
     padding: 10px;
     height: 450px;
     margin: auto;
-    border: 1px solid #7C5DF5;
+    border: 1px solid black;
     text-align: center;
     align-items: center;
     justify-content: center;

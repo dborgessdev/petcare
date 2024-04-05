@@ -54,16 +54,14 @@ a:hover{
 }
 
 footer{
-    background-color: #1A9C9A;
+    background-color: #1A9C9A;  
+    color: white;
     margin: auto;
-    width: 80%;
-    margin-bottom: 15px;
-    padding-bottom: 20px;
+    width: 100%;
     padding: 5px;
-    border-radius: 10px 10px 10px 10px;
-    height: 180px;
-    margin-bottom: 15px;
+    height: 100%;
     box-shadow: 2px 2px rgba(0, 0, 0, 0.992);
+    position: fixed;
 }
 
 footer a{
@@ -106,7 +104,8 @@ footer a{
 }
 
 .titulosec{
-    font-size: 16px;
+    font-size: 0.8em;
+    padding: 5px;
     margin: auto;
     color: #ffffff;
 }
@@ -127,7 +126,6 @@ footer a{
     align-items: center;
     justify-content: space-between;
 }
-
 
 
 /*IDS*/
